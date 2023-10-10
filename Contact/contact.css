@@ -1,0 +1,119 @@
+#navbar li {
+    margin-top: 13px;
+}
+
+/*--------- Form -------*/
+
+#form-details form span{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+#form-details form h2 {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 10px 0;
+}
+
+#form-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+}
+#form-details form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#form-details form input,
+#form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none ;
+    margin-bottom: 10px;
+    border: 1px solid #e1e1e1;
+}
+#form-details form button{
+    background-color: #088178;
+    border: 1px solid #088178;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 14px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px; 
+    cursor: pointer; 
+    transition: .3s ease; 
+}
+
+#form-details form button:hover{
+    background: transparent;
+    color: #088178;
+}
+
+/*-------- Page Heading -------*/
+
+#page-header.about-header{
+    background-image: url("contact.png"); 
+    width: 100%;
+    height: 40vh;
+}
+
+#page-header .get-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 8%;
+}
+
+#page-header .get-con h1 {
+    font-size: 70px;
+    color: #e1e1e1;
+}
+
+/*------ Media Query -----*/
+
+@media (max-width:799px) {
+
+    #page-header.about-header{ 
+        width: 100%;
+        height: 20vh;
+    }
+}
+
+
+@media (max-width:477px) {
+    #page-header.about-header{
+        width: 100%;
+        height: 20vh;
+    }
+
+    #page-header .get-con h1 {
+        font-size: 40px;
+    }
+
+    #form-details {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 30px;
+        border: 1px solid #e1e1e1;
+    }
+
+    #form-details form{
+        width: 100%;
+    }
+
+    #form-details form button{
+        margin-top: 20px;
+        font-size: 12px; 
+    }
+}

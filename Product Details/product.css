@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;
+}
+
+/*-------- Navbar -------*/
+
+#navbar li {
+    margin-top: 13px;
+}
+
+/*-------- Small and Big Images -------*/
+
+.flex-box {
+    display: flex;
+    width: 1000px;
+    margin: 70px auto;
+}
+
+/*----- Left ----*/
+
+.left {
+    width: 40%;
+}
+
+/*------ Big Images -----*/
+
+.big-img {
+    width: 350px;
+}
+
+.big-img img {
+    width: inherit;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+/*------ Small Images -----*/
+
+.small-img {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.small-img img {
+    width: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.small-img:hover img {
+    transform: scale(1.2);
+}
+
+/*------ Right ----*/
+
+.right {
+    margin-left: 70px;
+}
+
+/*------ Right Content----*/
+
+.url {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.pname {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.ratings i {
+    margin-top: 20px;
+    color: rgb(255, 136, 0);
+}
+
+.price {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.size {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.size p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.psize {
+    width: 50px;
+    height: 25px;
+    border: 1px solid rgb(255, 94, 0);
+    color: #000;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.psize.active {
+    border-width: 1.5px;
+    color: #ff5e00;
+    font-weight: 500;
+}
+
+/*----- Shop Now Button -----*/
+
+.btn-box {
+    display: flex;
+    margin-top: 40px;
+}
+
+.btn-box button {
+    font-size: 18px;
+    padding: 8px 25px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.buy-btn {
+    background-color: #00aeff;
+}
+
+.buy-btn:hover {
+    background-color: #007bfff0;
+}
+
+
+/* Media query */
+
+@media (max-width:799px) {
+
+    /*-------- Small and Big Images -------*/
+
+    .flex-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 20px;
+        height: 50vh;
+        width: 95%;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .small-img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .right {
+        margin-left: 70px;
+    }
+
+}
+
+@media (max-width:477px) {
+
+    /*-------- Small and Big Images -------*/
+
+    .flex-box {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 75%;
+    }
+
+    .left {
+        width: 130%;
+    }
+
+    .right {
+        margin-top: 20px;
+        padding-right: 20px;
+        left: 0;
+        width: 100%;
+    }
+
+    .small-img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .right {
+        margin-left: 50px;
+    }
+
+    .pname {
+        font-size: 18;
+    }
+
+    /*----- Right Content ----*/
+
+    .url {
+        font-size: 16px;
+    }
+
+    
+    .ratings i {
+        margin-top: 10px;
+    }
+
+    .price {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+
+    .size p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .psize {
+        width: 30px;
+        height: 20px;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    /*----- Shop Now Button -----*/
+    
+    .btn-box {
+        margin-top: 20px;
+    }
+    
+    .btn-box button {
+        font-size: 14px;
+    }
+
+    .section-p1 {
+        margin-top: 40px;
+    }
+}
+
+/*------------- Media Query 5 ------------*/
+
+@media (max-width:920px){
+
+    /*------ Navbar -------*/
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        height: 100vh;
+        width: 200px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #mobile span{
+        position: absolute;
+        background-color: hsl(0, 100%, 70%);
+        top: 25px;
+        /* right: 0; */
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1;
+        padding: 2px 4px;
+        border-radius: 20px;
+        z-index: -1;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 20px;
+    }
+
+    #lg-bag {
+        display: none;
+    }
+
+    #hero {
+        height: 100vh;
+        padding: 0 80px;
+        background-position: top 40% right 40%;
+    }
+
+    .service .container ul li{
+        width: 140px;
+    }
+
+    /*------ Products -----*/
+
+    #product1 .pro-container {
+        justify-content: center;
+    }
+
+    #product1 .pro {
+        margin: 40px;
+    }
+  
+    .flex-box {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 90%;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        margin-top: 20px;
+        padding-right: 20px;
+        left: 0;
+        width: 100%;
+    }
+
+    .small-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .right {
+        margin-left: 50px;
+    }
+
+    /* .pname {
+        font-size: 18;
+    } */
+
+    /*----- Right Content ----*/
+
+    /* .url {
+        font-size: 16px;
+    } */
+
+    
+    /* .ratings i {
+        margin-top: 10px;
+    } */
+
+    /* .price {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 10px 0;
+    } */
+
+    /* .size p {
+        font-size: 18px;
+        font-weight: 400;
+    } */
+
+    /* .psize {
+        width: 30px;
+        height: 20px;
+        align-items: center;
+        font-size: 12px;
+    } */
+
+    /*----- Shop Now Button -----*/
+    
+    /* .btn-box {
+        margin-top: 20px;
+    }
+     */
+    /* .btn-box button {
+        font-size: 14px;
+    } */
+
+    /* .section-p1 {
+        margin-top: 40px;
+    } */
+}
