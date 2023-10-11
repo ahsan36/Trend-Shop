@@ -41,8 +41,8 @@
 
             <ul id="navbar">
                 <li><a href="../index.php">Home</a></li>
-                <li><a href="../Shop/shop.html">Products</a></li>
-                <li><a href="../About/about.html">About</a></li>
+                <li><a href="../Shop/shop.php">Products</a></li>
+                <li><a href="../About/about.php">About</a></li>
                 <li><a href="../Contact/contact.php">Contact</a></li>
                 <li id="lg-bag">
                     <a href="../Shopping-cart/mycart.php">
@@ -57,7 +57,7 @@
                     ?>
                     <span class="count"><?php echo $count; ?></span>
                 </li>
-                <a href="product.html" id="close"><i class="fas fa-times"></i></a>
+                <a href="product.php" id="close"><i class="fas fa-times"></i></a>
             </ul>
         </div>
 
@@ -328,5 +328,6 @@
     <!-------- Link JavaScript ------>
 
     <script src="product.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
