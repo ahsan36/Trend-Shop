@@ -6,4 +6,5 @@ Live here: http://trendshop.infinityfreeapp.com/
 # Tech Stack Used 
 
 **Frontend:** HTML, CSS, JavaScript
+<br>
 **Backend:** PHP, MySQL
